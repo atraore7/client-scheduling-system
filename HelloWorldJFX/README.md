@@ -40,4 +40,4 @@ You'll also need the JavaFX SDK and MySQL Connector/J on your classpath (origina
 
 ## Notes
 
-This was built as an academic capstone project and reflects the schema and scope required for that assignment. It's shared here as a record of foundational software engineering work — OOP design, layered architecture, database integration, and UI development — separate from my current focus on applied AI/ML and RAG systems.
+This was built as an academic capstone project and reflects the schema and scope required for that assignment.
