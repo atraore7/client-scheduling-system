@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerScreenController">
+
+
+    <AnchorPane prefHeight="430.0" prefWidth="698.0">
+        <children>
+            <Label layoutX="237.0" layoutY="14.0" prefHeight="35.0" prefWidth="126.0" text="Customers">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <TableView fx:id="customerTable" layoutX="28.0" layoutY="86.0" prefHeight="254.0" prefWidth="640.0">
+                <columns>
+                    <TableColumn fx:id="customerIDCol" prefWidth="103.0" text="Customer ID" />
+                    <TableColumn fx:id="customerNameCol" prefWidth="119.0" text="Customer Name" />
+                    <TableColumn fx:id="customerAddressCol" prefWidth="120.0" text="Customer Address" />
+                    <TableColumn fx:id="customerPostalCol" prefWidth="99.0" text="Postal Code" />
+                    <TableColumn fx:id="customerDivisionCol" prefWidth="84.0" text="Division" />
+                    <TableColumn fx:id="customerPhoneCol" prefWidth="114.0" text="Phone Number" />
+                </columns>
+            </TableView>
+            <TextField fx:id="searchInput" layoutX="28.0" layoutY="49.0" onAction="#handleSearch" promptText="Search Customer Name or ID" />
+            <Button fx:id="addCustomerButton" layoutX="144.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleAddCustomer" text="Add Customer" />
+            <Button fx:id="deleteCustomerButton" layoutX="492.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleDeleteCustomer" text="Delete Customer" />
+            <Button fx:id="updateCustomerButton" layoutX="315.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleUpdateCustomer" text="Update Customer" />
+            <Button fx:id="backButton" layoutX="512.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+
+
+
+        </children>
+    </AnchorPane>
+
+
+
+
+
+
+</AnchorPane>

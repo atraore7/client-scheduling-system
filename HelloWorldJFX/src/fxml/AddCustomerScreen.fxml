@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.AddCustomerScreenController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="219.0" layoutY="14.0" text="Add Customer">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="93.0" text="Customer ID" />
+        <Label layoutX="42.0" layoutY="126.0" text="Customer Name" />
+        <Label layoutX="43.0" layoutY="161.0" text="Address" />
+        <Label layoutX="43.0" layoutY="200.0" text="Postal Code" />
+        <Button layoutX="499.0" layoutY="353.0" mnemonicParsing="false" text="Cancel" fx:id="cancelButton" onAction="#handleCancel" />
+        <Button layoutX="430.0" layoutY="353.0" mnemonicParsing="false" text="Save" fx:id="saveButton" onAction="#onSave"/>
+        <Label layoutX="45.0" layoutY="241.0" text="Phone Number" />
+        <TextField layoutX="138.0" layoutY="89.0" fx:id="customerIdInput" disable="true" promptText="Auto Gen - Disabled"/>
+        <TextField layoutX="138.0" layoutY="122.0" fx:id="customerNameInput" />
+        <TextField layoutX="138.0" layoutY="157.0" fx:id="customerAddressInput" />
+        <TextField layoutX="138.0" layoutY="196.0" fx:id="customerPostalInput"/>
+        <TextField layoutX="138.0" layoutY="237.0" fx:id="customerNumberInput"/>
+        <ComboBox layoutX="278.0" layoutY="275.0" prefHeight="25.0" prefWidth="122.0" promptText="Select Division" fx:id="divisionCombo"/>
+        <ComboBox layoutX="138.0" layoutY="275.0" prefHeight="25.0" prefWidth="122.0" promptText="Select Country" fx:id="countryCombo" onAction="#onSelectCountry"/>
+
+
+    </children>
+
+</AnchorPane>
+

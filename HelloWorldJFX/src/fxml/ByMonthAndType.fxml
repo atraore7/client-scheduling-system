@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ByMonthAndTypeController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ComboBox fx:id="monthCombo" layoutX="63.0" layoutY="105.0" prefHeight="25.0" prefWidth="177.0" promptText="Month" />
+        <ComboBox fx:id="typeCombo" layoutX="279.0" layoutY="105.0" prefHeight="25.0" prefWidth="177.0" promptText="Type" />
+        <Label layoutX="55.0" layoutY="73.0" text="Select Appointment Month">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="274.0" layoutY="72.0" prefHeight="27.0" prefWidth="186.0" text="Select Appointment Type">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="label" layoutX="274.0" layoutY="176.0" prefHeight="72.0" prefWidth="52.0" textAlignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="26.0" text="Number of Appointment by Type and Month">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="460.0" layoutY="284.0" mnemonicParsing="false" text="Back" onAction="#handleBackButton"/>
+        <Button layoutX="481.0" layoutY="105.0" mnemonicParsing="false" text="Search" onAction="#handleSearchButton"/>
+    </children>
+
+</AnchorPane>

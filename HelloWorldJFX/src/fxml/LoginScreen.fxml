@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <Label layoutX="90.0" layoutY="120.0" prefHeight="17.0" prefWidth="130.0" text="User Name" fx:id="usernameLabel">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="90.0" layoutY="160.0" text="Password" fx:id="passwordLabel">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="203.0" layoutY="42.0" prefHeight="45.0" prefWidth="200.0" text="Log In" fx:id="loginLabel">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <TextField layoutX="220.0" layoutY="116.0" fx:id="userNameInput"/>
+        <TextField layoutX="220.0" layoutY="158.0" fx:id="userPasswordInput"/>
+        <Label layoutX="246.0" layoutY="240.0" text="Label" fx:id="label" />
+        <Button fx:id="LoginButton" layoutX="319.0" layoutY="196.0" mnemonicParsing="false" onAction="#OnLogin" text="Log in" />
+    </children>
+</AnchorPane>

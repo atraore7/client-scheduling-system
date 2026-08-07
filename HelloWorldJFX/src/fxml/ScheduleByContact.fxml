@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ScheduleByContactController"
+            prefHeight="400.0" prefWidth="743.0">
+    <children>
+        <ComboBox fx:id="contactCombo" layoutX="58.0" layoutY="77.0" prefHeight="35.0" prefWidth="170.0" promptText="Select Contact" />
+        <Button layoutX="260.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+        <Label layoutX="258.0" layoutY="28.0" text="Schedule By Contact">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="634.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+        <TableView layoutX="16.0" layoutY="134.0" prefHeight="202.0" prefWidth="714.0" fx:id="apptTable">
+            <columns>
+                <TableColumn fx:id="apptIdCol" prefWidth="66.0" text="Appt. ID" />
+                <TableColumn fx:id="titleCol" prefWidth="66.0" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="81.0" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="87.0" text="Location" />
+                <TableColumn fx:id="contactCol" prefWidth="73.0" text="Contact" />
+                <TableColumn fx:id="typeCol" prefWidth="61.0" text="Type" />
+                <TableColumn fx:id="startCol" prefWidth="74.0" text="Start Date/Time" />
+                <TableColumn fx:id="endCol" prefWidth="67.0" text="End Date/Time" />
+                <TableColumn fx:id="customerIdCol" prefWidth="76.0" text="Customer ID" />
+                <TableColumn fx:id="userIdCol" prefWidth="62.0" text="User ID" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
